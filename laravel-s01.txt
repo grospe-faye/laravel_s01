@@ -1,0 +1,43 @@
+Authentication, Models, Migrations
+Into to Laravel
+
+What is Laravel?
+framework with expressive, elegant syntax
+
+why laravel?
+enables PHP devs to quickly build a scalable full-stack web app with minimal configuration
+
+understanding MVC
+Laravel follow Model-View-Controller structure
+
+directory structure overview
+-app folder
+	models are saved at its root
+	http -> controllers subdirectory
+-database folder
+	migrations subdir
+public folder
+	assets - css, js
+resources folder
+	views subdir
+routes folder
+	web.php
+.env file
+https://gitlab.com/grospe-faye/laravel_s01.git
+https://github.com/grospe-faye/laravel_s01.git
+
+crate a laravel project:
+composer create-project laravel/laravel=6.x laravel_blog --prefer-dist
+
+php artisan serve
+
+1. install Laravel's laravel/ui package via the terminal command:
+    composer require laravel/ui "^1.0" --dev
+2. Bild the authentication scaffolding via the terminal command:
+     php artisan ui vue --auth
+3. Compile our fresh scaffolding with the command:
+      npm install && npm run dev
+
+Post model
+php artisan make:model Post -mc
+php artisan migrate
